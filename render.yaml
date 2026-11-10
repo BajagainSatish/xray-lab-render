@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: xray-lab
+    name: xray-lab-satish
     runtime: docker
     plan: free
     dockerfilePath: ./Dockerfile
