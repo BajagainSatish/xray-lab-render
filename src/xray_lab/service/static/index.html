@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X-ray Lab — research demonstration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/app/" aria-label="X-ray Lab home">
+    <span class="mark" aria-hidden="true">XR</span>
+    <span class="brand-text">
+      <strong>X-ray Lab</strong>
+      <span>Research demonstration</span>
+    </span>
+  </a>
+  <div class="top-actions">
+    <span class="model-chip" id="model-chip">Loading model…</span>
+    <button class="top-link guide-open" type="button">Guide</button>
+    <a class="top-link" href="/docs">API docs</a>
+  </div>
+</header>
+
+<main class="shell">
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Not a medical device · for research only</span>
+        <h1>Read a chest X-ray.<br><span>See all 18 model outputs.</span></h1>
+        <p class="lede">
+          Pick a documented study from the reference library, or upload a PNG, JPEG,
+          or DICOM. Scores are computed at request time and nothing is stored.
+        </p>
+        <div class="hero-meta">
+          <span>PA &amp; AP views</span><span>Grad-CAM</span><span>DICOM</span>
+          <span>No stored uploads</span>
+        </div>
+        <button class="guide-link guide-open" type="button">
+          New to this? Read the plain-language guide →
+        </button>
+      </div>
+      <aside class="hero-panel">
+        <span class="eyebrow">In this demo</span>
+        <div class="stats">
+          <div><strong>100</strong><span>NIH studies</span></div>
+          <div><strong>18</strong><span>model outputs</span></div>
+          <div><strong>14</strong><span>findings</span></div>
+          <div><strong>3</strong><span>input formats</span></div>
+        </div>
+        <p class="micro">DenseNet-121 · CPU inference · about 0.55 s per study</p>
+      </aside>
+    </div>
+
+    <div id="dropzone" class="dropzone" tabindex="0" role="button"
+         aria-label="Upload a chest X-ray image">
+      <input id="file-input" type="file"
+             accept="image/png,image/jpeg,.dcm,application/dicom" hidden>
+      <span class="drop-icon" aria-hidden="true">↑</span>
+      <span class="drop-copy">
+        <strong>Drop a chest X-ray here</strong>
+        <span>PNG, JPEG, or DICOM · grayscale · up to 25 MB</span>
+        <span class="drop-hint" id="upload-hint">No file selected</span>
+      </span>
+      <span class="button drop-button">Browse files</span>
+    </div>
+
+    <p class="disclaimer">
+      <strong>Not a diagnosis.</strong> Scores are uncalibrated model outputs. The
+      model was trained on public data that overlaps this library. Do not use
+      this page for patient care.
+    </p>
+  </section>
+
+  <nav class="view-tabs" aria-label="View">
+    <button type="button" class="tab active" data-view="workbench" aria-pressed="true">Workbench</button>
+    <button type="button" class="tab" data-view="validation" aria-pressed="false">External validation</button>
+  </nav>
+
+  <div id="workbench-view">
+  <section class="analysis" id="analysis" hidden aria-label="Analysis result">
+    <div class="analysis-head">
+      <div class="analysis-title">
+        <span class="eyebrow">Analysis</span>
+        <h2 id="analysis-title">—</h2>
+        <p class="analysis-sub" id="analysis-sub"></p>
+      </div>
+      <div class="analysis-actions">
+        <span class="status" id="status" role="status" aria-live="polite">Idle</span>
+        <button class="ghost" id="clear-selection" type="button">Close</button>
+      </div>
+    </div>
+
+    <div class="viewer">
+      <img id="viewer-bg" class="viewer-bg" alt="" aria-hidden="true" hidden>
+      <div class="viewer-loading" id="viewer-loading">Preparing image…</div>
+      <img id="preview" alt="Selected chest X-ray">
+      <span class="viewer-badge" id="viewer-badge" hidden></span>
+      <div class="viewer-top" id="viewer-top" hidden>
+        <span class="eyebrow">Top output</span>
+        <div class="viewer-score">
+          <strong id="top-label"></strong>
+          <span id="top-score"></span>
+        </div>
+        <span class="viewer-note">highest sigmoid · not a probability</span>
+      </div>
+    </div>
+
+    <div class="chips">
+      <div class="reference" id="reference" hidden></div>
+      <div class="meta-chips" id="meta-chips"></div>
+      <button class="ghost chip-button" id="toggle-details" type="button">Details</button>
+    </div>
+    <div class="details" id="details" hidden>
+      <dl id="meta"></dl>
+    </div>
+
+    <div class="error" id="error" role="alert" hidden></div>
+
+    <div class="card scores-card">
+      <div class="card-head">
+        <div>
+          <h3>Model outputs</h3>
+          <p class="micro">
+            Each bar ranks how strongly the model reacts to one finding.
+            <button class="link guide-open" type="button">What does this mean?</button>
+          </p>
+        </div>
+        <button class="link" id="toggle-scores" type="button">Show all 18</button>
+      </div>
+      <div id="scores" class="scores"></div>
+      <p class="micro">
+        Orange marks a label from the NIH reference record. A high score is not a
+        diagnosis, and a match with the NIH label is not proof of correctness.
+      </p>
+    </div>
+
+    <div class="card explain-card">
+      <div class="card-head">
+        <div>
+          <h3>Where did the model look?</h3>
+          <p class="micro">Grad-CAM for one selected output.</p>
+        </div>
+        <div class="explain-controls">
+          <select id="explain-label" aria-label="Finding to explain" aria-describedby="explain-help"></select>
+          <button id="explain-btn" class="button" type="button">Explain</button>
+        </div>
+      </div>
+      <p class="micro" id="explain-help">Choose a finding to see a plain-language explanation.</p>
+      <p class="micro">
+        Coarse 7×7 gradient sensitivity upsampled to the image. Not a lesion mask,
+        and not proof that the model found the disease.
+      </p>
+      <p id="explain-status" class="micro" role="status" aria-live="polite"></p>
+      <img id="explain-image" class="explain-image" hidden
+           alt="Grad-CAM overlay for the selected finding">
+      <p id="explain-caption" class="micro" hidden></p>
+    </div>
+  </section>
+
+  <section class="library" id="library">
+    <div class="library-head">
+      <div>
+        <h2>Reference library</h2>
+        <p id="gallery-count">Loading studies…</p>
+      </div>
+      <div class="filters">
+        <input id="search" type="search" placeholder="Search image ID"
+               aria-label="Search image ID">
+        <select id="label-filter" aria-label="Filter by label">
+          <option value="">All labels</option>
+        </select>
+        <div class="segmented" role="group" aria-label="Filter by view">
+          <button type="button" data-view="" class="active" aria-pressed="true">All views</button>
+          <button type="button" data-view="PA" aria-pressed="false">PA</button>
+          <button type="button" data-view="AP" aria-pressed="false">AP</button>
+        </div>
+        <div class="segmented" role="group" aria-label="Filter by finding status">
+          <button type="button" data-status="" class="active" aria-pressed="true">All studies</button>
+          <button type="button" data-status="findings" aria-pressed="false">With finding</button>
+          <button type="button" data-status="normal" aria-pressed="false">No Finding</button>
+        </div>
+      </div>
+    </div>
+    <div id="gallery" class="gallery" aria-live="polite"></div>
+    <p class="empty" id="gallery-empty" hidden>No studies match these filters.</p>
+  </section>
+  </div>
+
+  <section class="validation" id="validation" hidden>
+    <div class="validation-head">
+      <div>
+        <span class="eyebrow">External validation</span>
+        <h2>One finding, a different dataset</h2>
+        <p>
+          Pneumothorax on the SIIM-ACR 256 px subset — not one of the model's
+          documented training collections, and not clinical validation.
+        </p>
+      </div>
+      <span class="validation-pill" id="validation-pill">Loading…</span>
+    </div>
+    <div id="validation-content" class="validation-content">
+      <p class="micro">Loading external validation…</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>
+    TorchXRayVision DenseNet-121 · NIH ChestX-ray14 (report-mined labels) ·
+    <a href="/docs">OpenAPI docs</a> · <a href="/v1/models">model card</a>
+  </p>
+  <p>Research demonstration only. No stored uploads, no clinical claim.</p>
+</footer>
+
+
+<dialog class="guide" id="guide" aria-labelledby="guide-title">
+  <div class="guide-head">
+    <div>
+      <span class="eyebrow">Plain-language guide</span>
+      <h2 id="guide-title">How to read this page</h2>
+    </div>
+    <button class="ghost" id="guide-close" type="button">Close</button>
+  </div>
+  <div class="guide-body">
+    <section>
+      <h3>What this page does</h3>
+      <p>
+        A computer program looks at a chest X-ray and gives 18 numbers, one for each
+        finding it was trained to recognise. You can pick one of the demo X-rays or
+        upload your own. The numbers are produced fresh for every request.
+      </p>
+      <p>
+        This is a research demonstration. It is not a diagnosis, not a second
+        opinion, and not approved for patient care.
+      </p>
+    </section>
+
+    <section>
+      <h3>How to read the numbers</h3>
+      <p>
+        Each score is between 0 and 1 and compares findings within this one image.
+        A higher score means the model reacted more strongly. It does <strong>not</strong>
+        mean an 80% chance of disease. The 18 scores do not sum to 1, and several
+        can be high at once.
+      </p>
+      <div class="scale" aria-hidden="true">
+        <span>0 · weaker signal</span>
+        <span class="scale-bar"></span>
+        <span>1 · stronger signal</span>
+      </div>
+      <p>
+        “Top output” is simply the highest of those 18 scores. It is not a confirmed
+        answer.
+      </p>
+    </section>
+
+    <section>
+      <h3>The findings in plain English</h3>
+      <dl class="glossary">
+        <div><dt>Atelectasis</dt><dd>Part of a lung collapses or does not inflate fully.</dd></div>
+        <div><dt>Consolidation</dt><dd>Air spaces in the lung fill with fluid or cells, so an area looks solid.</dd></div>
+        <div><dt>Infiltration</dt><dd>A broad term for material in the lung where air should be.</dd></div>
+        <div><dt>Pneumothorax</dt><dd>Air leaks around a lung, which can partly collapse it.</dd></div>
+        <div><dt>Edema</dt><dd>Extra fluid in the lungs, often because of the heart.</dd></div>
+        <div><dt>Emphysema</dt><dd>Damaged lung tissue makes it harder to push air out.</dd></div>
+        <div><dt>Fibrosis</dt><dd>Scarring makes lung tissue stiff.</dd></div>
+        <div><dt>Effusion</dt><dd>Fluid collects in the space around a lung.</dd></div>
+        <div><dt>Pneumonia</dt><dd>Infection inflames the lungs and can fill air spaces.</dd></div>
+        <div><dt>Pleural Thickening</dt><dd>The lining around the lung becomes thicker.</dd></div>
+        <div><dt>Cardiomegaly</dt><dd>The heart looks larger than expected on the image.</dd></div>
+        <div><dt>Nodule</dt><dd>A small, rounded spot in the lung.</dd></div>
+        <div><dt>Mass</dt><dd>A larger rounded abnormality; it may or may not be harmful.</dd></div>
+        <div><dt>Hernia</dt><dd>Part of the abdomen pushes up through the diaphragm.</dd></div>
+        <div><dt>Lung Lesion</dt><dd>A general term for an abnormal area in the lung.</dd></div>
+        <div><dt>Fracture</dt><dd>A broken bone, such as a rib.</dd></div>
+        <div><dt>Lung Opacity</dt><dd>A whiter area where something is denser than air.</dd></div>
+        <div><dt>Enlarged Cardiomediastinum</dt><dd>The central chest area looks wider than expected.</dd></div>
+        <div><dt>No Finding</dt><dd>The original report mentioned no finding. It is not one of the model's 18 outputs.</dd></div>
+      </dl>
+    </section>
+
+    <section>
+      <h3>Words used on this page</h3>
+      <dl class="words">
+        <div><dt>Model / checkpoint</dt><dd>A pattern-recognition network trained on many chest X-rays. We did not train it.</dd></div>
+        <div><dt>NIH label</dt><dd>A finding mined from the original radiology report. Reports and mining can be incomplete or wrong, so it is a reference, not perfect truth.</dd></div>
+        <div><dt>Sigmoid score</dt><dd>A 0–1 number used for ranking. It is not a calibrated probability.</dd></div>
+        <div><dt>Calibration</dt><dd>Whether a score of 0.8 really happens about 80% of the time. This demo has not been calibrated for a clinical population.</dd></div>
+        <div><dt>Grad-CAM</dt><dd>A heatmap built from the model's internal gradients. It shows where the maths is sensitive, not where a disease is.</dd></div>
+        <div><dt>DICOM</dt><dd>A medical image file containing pixels plus scanner metadata. The page applies the file's brightness window before scoring.</dd></div>
+      </dl>
+    </section>
+
+    <section class="callout">
+      <h3>What it cannot tell you</h3>
+      <ul>
+        <li>It cannot rule a disease in or out.</li>
+        <li>It has not been compared with radiologists on a proper evaluation set.</li>
+        <li>The demo images come from a public dataset the model may have seen during training.</li>
+        <li>The heatmap is coarse and does not outline a lesion.</li>
+        <li>It does not account for your patient's history, symptoms, or other tests.</li>
+      </ul>
+    </section>
+  </div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>

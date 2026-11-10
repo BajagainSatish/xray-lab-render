@@ -1,0 +1,9 @@
+fastapi==0.162.2
+uvicorn==0.54.0
+python-multipart==0.0.33
+pydicom==3.0.2
+numpy==2.5.4
+pillow==13.0.0
+scikit-image==0.26.0
+onnxruntime==1.31.1
+httpx==0.28.1

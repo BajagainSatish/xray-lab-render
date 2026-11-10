@@ -1,0 +1,1308 @@
+{
+  "schema_version": 1,
+  "library_id": "nih-reference-library-v1-render",
+  "created_at_utc": "2026-11-10T14:15:10.489295+00:00",
+  "purpose": "Render UI reference library (WebP copy of the documented set).",
+  "images": [
+    {
+      "sample_id": "00000013_035.png",
+      "stratum": "atelectasis_pa",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Pneumothorax",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000013_035.webp",
+      "sha256": "305f62ce0c9af05917560d706edf3804a5717af01aade976474c4718ab3150e3",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000013_035.webp",
+      "thumbnail_sha256": "2ce197d8c31fbc0f0841208e0d3379688f48e5857783cb2de878bc91e983ec4b"
+    },
+    {
+      "sample_id": "00000072_000.png",
+      "stratum": "atelectasis_pa",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000072_000.webp",
+      "sha256": "0a8769f7c1cd2c5b104e9b0a047cf10ae795bcb213febc96e1e652f2c268f92c",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000072_000.webp",
+      "thumbnail_sha256": "05352ae7288419265706ebfa10dfc4358f58f0e628bd656e372ecc16e18f00d1"
+    },
+    {
+      "sample_id": "00000147_001.png",
+      "stratum": "atelectasis_pa",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000147_001.webp",
+      "sha256": "de3988a855e30978e5ed6329bed0c584e56901850246fe235aa29ea321a20aef",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000147_001.webp",
+      "thumbnail_sha256": "badbc0ec44d0ab9aa5b5e4d9e715b17cfc23b52439b31efed41f18bdeb22d1ed"
+    },
+    {
+      "sample_id": "00000149_002.png",
+      "stratum": "atelectasis_pa",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000149_002.webp",
+      "sha256": "930c144a79938d41c519a43f741726554f1f432be189dbf700c6bc132d4dc918",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000149_002.webp",
+      "thumbnail_sha256": "6c468f1cf190fb3c9d9a7eff6bc68af5bd71975eb02d5e8adf941f85d0ef910b"
+    },
+    {
+      "sample_id": "00000032_006.png",
+      "stratum": "atelectasis_ap",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Effusion|Infiltration",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00000032_006.webp",
+      "sha256": "39e3ef066f69ae36276054adabf7da65e8ac72c0de3a362921bbccc67bdf4733",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000032_006.webp",
+      "thumbnail_sha256": "af6660b504bbde7546dc0d1b7971fd84c68badcb4bf15126d8b1aaea18962fc9"
+    },
+    {
+      "sample_id": "00000211_009.png",
+      "stratum": "consolidation_pa",
+      "label_list": [
+        "Cardiomegaly"
+      ],
+      "finding_labels": "Cardiomegaly|Consolidation|Edema|Effusion",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000211_009.webp",
+      "sha256": "695265cefd5dc253f66492c9d513db3cf29af96b2700db91e82fbf0e7dc9bbf1",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000211_009.webp",
+      "thumbnail_sha256": "686af7b3de5b18fef8799305960af6a446be7b509ff3a3379569e0d9406f0dd2"
+    },
+    {
+      "sample_id": "00000246_012.png",
+      "stratum": "consolidation_pa",
+      "label_list": [
+        "Consolidation"
+      ],
+      "finding_labels": "Consolidation|Pneumothorax",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000246_012.webp",
+      "sha256": "39eb0e5e325c9110ade98b6be09071b84ba2357ad92c90d067e3e72dbe5faf03",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000246_012.webp",
+      "thumbnail_sha256": "c4cdfd6c20fbdd3c6803211479764afd2b314d28a9215a3498343f812f359ad5"
+    },
+    {
+      "sample_id": "00000467_000.png",
+      "stratum": "consolidation_pa",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Consolidation",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000467_000.webp",
+      "sha256": "22505c3e180facb0a480e3db71626060f4cecddf286bccfbf7b25807d5945f01",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000467_000.webp",
+      "thumbnail_sha256": "d89215fc9af63761b2d605239b682e5311a4d034b3b8164231578db362672520"
+    },
+    {
+      "sample_id": "00000468_034.png",
+      "stratum": "consolidation_pa",
+      "label_list": [
+        "Consolidation"
+      ],
+      "finding_labels": "Consolidation",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000468_034.webp",
+      "sha256": "deb8b32be2b4475fa61f13782223fba9c56c76159a31b8778a9dfa17a7d3da36",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000468_034.webp",
+      "thumbnail_sha256": "545ac37e67fc6f169c5efc2bce07142584a7915e0061262bafdcaf8c3b3c53da"
+    },
+    {
+      "sample_id": "00000116_007.png",
+      "stratum": "consolidation_ap",
+      "label_list": [
+        "Consolidation"
+      ],
+      "finding_labels": "Consolidation|Effusion|Infiltration",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00000116_007.webp",
+      "sha256": "59c456c2e13d3a8b2d267bad7b93d3b1c8272ae335f04ed91e24e1b56c03b4e0",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000116_007.webp",
+      "thumbnail_sha256": "889bd26c9208c01bcccf4a88fffb6118f3cbf52ab8a16e1633108608eea5a5d5"
+    },
+    {
+      "sample_id": "00000003_003.png",
+      "stratum": "infiltration_pa",
+      "label_list": [
+        "Hernia"
+      ],
+      "finding_labels": "Hernia|Infiltration",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000003_003.webp",
+      "sha256": "56d0c9a838b3f05b429e8aa0996dd9cf235d2e5f15447cc6d3b910440d63f4ad",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000003_003.webp",
+      "thumbnail_sha256": "4eec63df641f94e7fb7ac435ed85e3bccf1af605ed8da89a217bd0998dc40d02"
+    },
+    {
+      "sample_id": "00000041_000.png",
+      "stratum": "infiltration_pa",
+      "label_list": [
+        "Emphysema"
+      ],
+      "finding_labels": "Emphysema|Infiltration",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000041_000.webp",
+      "sha256": "b73356d5b66802b9a960f7b7f1ee9294405354c3dfba862c1f02033bec4d3af2",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000041_000.webp",
+      "thumbnail_sha256": "7bfde8f32548f90a0ddadac1ee8b04eff60547da53f699c860261287fa72707a"
+    },
+    {
+      "sample_id": "00000181_062.png",
+      "stratum": "infiltration_pa",
+      "label_list": [
+        "Effusion"
+      ],
+      "finding_labels": "Effusion|Infiltration",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000181_062.webp",
+      "sha256": "454a655d22734299dd10a0b71815dfbad202797e111a2fc3dac2205b525dd843",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000181_062.webp",
+      "thumbnail_sha256": "4a6b7df8cacf15508a6b38f840c5b4c89cd17f37a41d35e9c469ef34deb81e8b"
+    },
+    {
+      "sample_id": "00000218_000.png",
+      "stratum": "infiltration_pa",
+      "label_list": [
+        "Infiltration"
+      ],
+      "finding_labels": "Infiltration|Pneumonia",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000218_000.webp",
+      "sha256": "5d0e993a15720c0aed9680cd3209e886a65d8c1b9e8430c4cc41406d6c2ad673",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000218_000.webp",
+      "thumbnail_sha256": "38e5fce1a406b373bc061d5daaf41ef315aea4ea7ed66d0b628c51f4fd3d801a"
+    },
+    {
+      "sample_id": "00000150_002.png",
+      "stratum": "infiltration_ap",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Infiltration|Pneumonia",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00000150_002.webp",
+      "sha256": "ae4b05cb521ce59b495320497f641f8f85218b2ee672aad29c3faa95152ce364",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000150_002.webp",
+      "thumbnail_sha256": "600e376163e65d52f97badb7b37ec720329d2b1c746a93f3404c676b40fbdcd2"
+    },
+    {
+      "sample_id": "00000643_002.png",
+      "stratum": "pneumothorax_pa",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Infiltration|Pneumothorax",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000643_002.webp",
+      "sha256": "8914d05aa2ce268147e26ed33bd5c0c9779a5874061ac7d518d7ac921e018ee8",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000643_002.webp",
+      "thumbnail_sha256": "d16b87b274ae857c2ce6c7373ac84e2114adae2d3eadcc1ca24d7cc35dd38770"
+    },
+    {
+      "sample_id": "00000732_004.png",
+      "stratum": "pneumothorax_pa",
+      "label_list": [
+        "Cardiomegaly"
+      ],
+      "finding_labels": "Cardiomegaly|Effusion|Fibrosis|Pleural_Thickening|Pneumothorax",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000732_004.webp",
+      "sha256": "52a053d129f7e112b00142500c472b47dba90734ae9e6d3803cff81886d6f952",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000732_004.webp",
+      "thumbnail_sha256": "8006273f6e4c7eca6833948ea42a114d750ad72c4e866427fb5db65d97247f91"
+    },
+    {
+      "sample_id": "00000744_004.png",
+      "stratum": "pneumothorax_pa",
+      "label_list": [
+        "Pneumothorax"
+      ],
+      "finding_labels": "Pneumothorax",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000744_004.webp",
+      "sha256": "3a100bfff5464af8de4a10a90a72a45491bb6b3fbd6e96eb205952aee797b8a1",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000744_004.webp",
+      "thumbnail_sha256": "5479023020bbda8bb05a2f30523da2eff5deac12e12c3856d212090810a01f14"
+    },
+    {
+      "sample_id": "00001006_000.png",
+      "stratum": "pneumothorax_pa",
+      "label_list": [
+        "Pneumothorax"
+      ],
+      "finding_labels": "Pneumothorax",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001006_000.webp",
+      "sha256": "e5e8a981dbffb138a9b6dfc0ac16ac8a75b587d91bed4d046e07846b5b4eea43",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001006_000.webp",
+      "thumbnail_sha256": "4c3e96b23f00bd4823f195be2c732231cb4fac9ad866a0a872ad362597a25233"
+    },
+    {
+      "sample_id": "00000865_000.png",
+      "stratum": "pneumothorax_ap",
+      "label_list": [
+        "Pneumothorax"
+      ],
+      "finding_labels": "Pneumothorax",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00000865_000.webp",
+      "sha256": "8906f6604ef57c4f7a8a717db7dd741e6165d7a06204ef363133cb84314c2b30",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000865_000.webp",
+      "thumbnail_sha256": "36bbe26ebd00d5b822bc987b78b85ee552ccbb8165ddf064176b9c07bdd84b08"
+    },
+    {
+      "sample_id": "00002533_004.png",
+      "stratum": "edema_pa",
+      "label_list": [
+        "Edema"
+      ],
+      "finding_labels": "Edema|Effusion",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00002533_004.webp",
+      "sha256": "c34fc75c7b12fbe0f4910330462236fa8a19f4a9bcb096cb680dcffd3e317f6a",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002533_004.webp",
+      "thumbnail_sha256": "944eef893ccbe377f460c5f27cefd56f8965311179d3d2f525d6e81d200ca32a"
+    },
+    {
+      "sample_id": "00003803_010.png",
+      "stratum": "edema_pa",
+      "label_list": [
+        "Edema"
+      ],
+      "finding_labels": "Edema|Effusion",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00003803_010.webp",
+      "sha256": "57fbcaaa444fd34609f568af7c2c6669f41c9c1461527e485d3c4859a0d4fc68",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00003803_010.webp",
+      "thumbnail_sha256": "3e19245a1c268b91da4482e51cf435f30fe5f235ef61f2e66d5284cdba97c687"
+    },
+    {
+      "sample_id": "00004911_029.png",
+      "stratum": "edema_pa",
+      "label_list": [
+        "Edema"
+      ],
+      "finding_labels": "Edema|Infiltration|Mass",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00004911_029.webp",
+      "sha256": "16824a2c3220a64e945c7577504770bb9e89ba07cf659a16eef9bd7b74a4b94d",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00004911_029.webp",
+      "thumbnail_sha256": "1eafa9fd2e88a166e644c5212b7a007724b8706107236278f82a07042998e08f"
+    },
+    {
+      "sample_id": "00005986_000.png",
+      "stratum": "edema_pa",
+      "label_list": [
+        "Edema"
+      ],
+      "finding_labels": "Edema",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00005986_000.webp",
+      "sha256": "8ed9158b860c7feb1097c804021b56b36a75f646b3caab9e8e9f35f5ee0b0737",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00005986_000.webp",
+      "thumbnail_sha256": "59d767d35de56b4846f9a06fde01c2b2d0ba08d842fde4498680cca0cd286a5b"
+    },
+    {
+      "sample_id": "00000506_013.png",
+      "stratum": "edema_ap",
+      "label_list": [
+        "Edema"
+      ],
+      "finding_labels": "Edema|Effusion|Pneumonia",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00000506_013.webp",
+      "sha256": "860690eb0778ea96c90d1dab1779b766960e537238be35eb9ae217356caa849a",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000506_013.webp",
+      "thumbnail_sha256": "29022bbb0a5edd17084064c96b1ba4445b9621c486ffcd9b3e79cd82c4dacb2c"
+    },
+    {
+      "sample_id": "00000312_001.png",
+      "stratum": "emphysema_pa",
+      "label_list": [
+        "Emphysema"
+      ],
+      "finding_labels": "Emphysema",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000312_001.webp",
+      "sha256": "033be8a7c3851c63cd0f1b5cfaf61bd2813a57f2cf671ad00de39b6f78dd40d4",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000312_001.webp",
+      "thumbnail_sha256": "4204d2ccd2c533f3411156d135911c2b830efecf385691a9e5c4f0cdcafc5cef"
+    },
+    {
+      "sample_id": "00000882_000.png",
+      "stratum": "emphysema_pa",
+      "label_list": [
+        "Emphysema"
+      ],
+      "finding_labels": "Emphysema",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000882_000.webp",
+      "sha256": "9039209e88288b195fe0d603295d3bb413be51b936d91dd3dafbcc7ddfa36d20",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000882_000.webp",
+      "thumbnail_sha256": "a2fd6e196da27099ca05f9b649d7e3b89cb57fb6e99cee9fd2449dbfcbe052e2"
+    },
+    {
+      "sample_id": "00001093_000.png",
+      "stratum": "emphysema_pa",
+      "label_list": [
+        "Emphysema"
+      ],
+      "finding_labels": "Emphysema",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001093_000.webp",
+      "sha256": "5593666df9618afb7d963d50f294c6ba1819ef2f79171801b726acab8ef01896",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001093_000.webp",
+      "thumbnail_sha256": "f3149b9280e3a3e3e9ee3d3a14649faecdfa4b7eeb3390b1f3d1bbea87c53a17"
+    },
+    {
+      "sample_id": "00001170_005.png",
+      "stratum": "emphysema_pa",
+      "label_list": [
+        "Emphysema"
+      ],
+      "finding_labels": "Emphysema|Pleural_Thickening",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001170_005.webp",
+      "sha256": "5438cb617cea26ab60905301f7ffc204c1c9477d95d98edb2975aaceb4013a47",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001170_005.webp",
+      "thumbnail_sha256": "46af3a04bbd3f9051dbffbe56869ca6064f6fb395b84683c955912bc0bbef4b6"
+    },
+    {
+      "sample_id": "00001039_005.png",
+      "stratum": "emphysema_ap",
+      "label_list": [
+        "Emphysema"
+      ],
+      "finding_labels": "Emphysema|Infiltration",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00001039_005.webp",
+      "sha256": "e601a11e7c581753ff10041e7d640b404a6b4c1ceea8f3779661028713cdd04d",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001039_005.webp",
+      "thumbnail_sha256": "ea34307c00bcdd3d0ee8d3f588e2f3373b7e17153d37e5da4d50b1ddb9e3091a"
+    },
+    {
+      "sample_id": "00000092_001.png",
+      "stratum": "fibrosis_pa",
+      "label_list": [
+        "Effusion"
+      ],
+      "finding_labels": "Effusion|Fibrosis",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000092_001.webp",
+      "sha256": "8381ede74fa5bec9acd5c49212585a47799d9bd9cbd51e5bc90e742c4aa2ef60",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000092_001.webp",
+      "thumbnail_sha256": "9147a4d9c111d4096d5ba631d735ca291736c9746bc59293de26ed60d425c2e7"
+    },
+    {
+      "sample_id": "00000324_003.png",
+      "stratum": "fibrosis_pa",
+      "label_list": [
+        "Fibrosis"
+      ],
+      "finding_labels": "Fibrosis",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000324_003.webp",
+      "sha256": "8ce62b217f9cd5029f030aa4fd2e69d0995df742f03cf71e9f646f63a6d72763",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000324_003.webp",
+      "thumbnail_sha256": "a31cbcc51f99bcee140be554e8ed6a98ea6c88593cedbb1f8c346814e847c86a"
+    },
+    {
+      "sample_id": "00000461_000.png",
+      "stratum": "fibrosis_pa",
+      "label_list": [
+        "Fibrosis"
+      ],
+      "finding_labels": "Fibrosis",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000461_000.webp",
+      "sha256": "5d7197cd50499148dbbabe42ad146e2804c70009199a4f40cddc4229dfdad673",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000461_000.webp",
+      "thumbnail_sha256": "b5c8d947298905942f294c5fe7c916500342e8b554262fc28a32229c4a8fcac4"
+    },
+    {
+      "sample_id": "00000533_004.png",
+      "stratum": "fibrosis_pa",
+      "label_list": [
+        "Fibrosis"
+      ],
+      "finding_labels": "Fibrosis",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000533_004.webp",
+      "sha256": "ad0cbf91f7571d61279901024b42957253d3cf00df664723305dab275e3a8a31",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000533_004.webp",
+      "thumbnail_sha256": "8028f53451bb9845f0408e5bfed4b7500282140ce9285ff95fedc23be5354b6a"
+    },
+    {
+      "sample_id": "00000398_003.png",
+      "stratum": "fibrosis_ap",
+      "label_list": [
+        "Cardiomegaly"
+      ],
+      "finding_labels": "Cardiomegaly|Fibrosis",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00000398_003.webp",
+      "sha256": "4ad4f87f7b58c3220d2b6838837b1555e12aa5d6c889550b2ad0e56b6d1c8a28",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000398_003.webp",
+      "thumbnail_sha256": "741520a359a0cc228e94457e8b06e5eeb04efe3dec083d7eafbf8311ac3ccefe"
+    },
+    {
+      "sample_id": "00000284_005.png",
+      "stratum": "effusion_pa",
+      "label_list": [
+        "Cardiomegaly"
+      ],
+      "finding_labels": "Cardiomegaly|Effusion|Hernia",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000284_005.webp",
+      "sha256": "52d26c10f3c099e321ddd63af7cd5d234364c9360f9aecc18e847e73d6d95ca2",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000284_005.webp",
+      "thumbnail_sha256": "ec3091e3b086a5a312e2588f017da4542792236512e700d21b0f43551771eb1e"
+    },
+    {
+      "sample_id": "00000344_003.png",
+      "stratum": "effusion_pa",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Effusion|Infiltration",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000344_003.webp",
+      "sha256": "19dd1796b1c890ed1b309e5ff8fa0a8d5dc2231d382d8b91ec07e4997c517244",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000344_003.webp",
+      "thumbnail_sha256": "3faca02eaa0fd44523c96955ac6f565a9d9d9bff296913f69a97fd6f1f8f9649"
+    },
+    {
+      "sample_id": "00000457_002.png",
+      "stratum": "effusion_pa",
+      "label_list": [
+        "Cardiomegaly"
+      ],
+      "finding_labels": "Cardiomegaly|Effusion",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000457_002.webp",
+      "sha256": "7914f9dc43d573047ccd6e6214ce8a494c11094e96888d80175ad1ee24f027ba",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000457_002.webp",
+      "thumbnail_sha256": "0615d160745e070f2d702cd028e3531c54aa109bb3ff6408889ff619bc77e352"
+    },
+    {
+      "sample_id": "00000583_000.png",
+      "stratum": "effusion_pa",
+      "label_list": [
+        "Effusion"
+      ],
+      "finding_labels": "Effusion",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000583_000.webp",
+      "sha256": "a9691c12ed47024577ca250b6cd7aa9579c09a6c7a3ea0cfec2af2cd8c4ccbe1",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000583_000.webp",
+      "thumbnail_sha256": "0bdc1fcf6eea241b712667c6157008271db8c197f8bda17474ab4fdc2a0bf8f0"
+    },
+    {
+      "sample_id": "00000377_001.png",
+      "stratum": "effusion_ap",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Cardiomegaly|Effusion|Infiltration",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00000377_001.webp",
+      "sha256": "dea829b008a5d9ba595d0d8e8d5745f5f3e06ccbdb5bd9d52838259de7419123",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000377_001.webp",
+      "thumbnail_sha256": "2dabe9100f248beb7041ba3f3b38917c4ba8cdee5c44c80494c81d835b85f2fa"
+    },
+    {
+      "sample_id": "00001248_003.png",
+      "stratum": "pneumonia_pa",
+      "label_list": [
+        "Consolidation"
+      ],
+      "finding_labels": "Consolidation|Effusion|Pneumonia",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001248_003.webp",
+      "sha256": "1ae83fda99dcd22982aaadc674ba6d0d17126b68f63115ddad87f0977e4d45be",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001248_003.webp",
+      "thumbnail_sha256": "9804518cf81a68c5163d4964943b03933560b03575316ba79d3455dc8438516c"
+    },
+    {
+      "sample_id": "00001437_024.png",
+      "stratum": "pneumonia_pa",
+      "label_list": [
+        "Consolidation"
+      ],
+      "finding_labels": "Consolidation|Effusion|Infiltration|Pneumonia",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001437_024.webp",
+      "sha256": "bf4c02c2edab04073cff47719e150c1e0971e5c65b1cd2178cf6d3d104112a08",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001437_024.webp",
+      "thumbnail_sha256": "1fca095fc3569acd3c0e449dd1e6a43811886762342c9407f1eddca9f60824af"
+    },
+    {
+      "sample_id": "00001582_017.png",
+      "stratum": "pneumonia_pa",
+      "label_list": [
+        "Infiltration"
+      ],
+      "finding_labels": "Infiltration|Mass|Pneumonia",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001582_017.webp",
+      "sha256": "d7cb98f8504028626f04e35077c02fc12515ebc1dde54dcb20280f735c541522",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001582_017.webp",
+      "thumbnail_sha256": "329c604562af0311b0c5b374e6e00676ebce4fa2e47faa99b7e612c12ab2c4b7"
+    },
+    {
+      "sample_id": "00001933_000.png",
+      "stratum": "pneumonia_pa",
+      "label_list": [
+        "Consolidation"
+      ],
+      "finding_labels": "Consolidation|Pneumonia",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001933_000.webp",
+      "sha256": "79df3d9e431daed4be8d8bd48b8d8c231e53bdc562c71788d528c08595e347cf",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001933_000.webp",
+      "thumbnail_sha256": "e685a4a1314a6a458e5e0591532f105ab8637f36acb3a700ee53dd30e7f859ed"
+    },
+    {
+      "sample_id": "00000193_019.png",
+      "stratum": "pneumonia_ap",
+      "label_list": [
+        "Pneumonia"
+      ],
+      "finding_labels": "Pneumonia",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00000193_019.webp",
+      "sha256": "2127e32a749a4ccdbccec2e66e51036128c4ae1c08f1853166fb53e3ee06e07f",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000193_019.webp",
+      "thumbnail_sha256": "153aaa672b1061b5f3c9182d874bb67b565a267855213283f6b86e41d702ce3a"
+    },
+    {
+      "sample_id": "00000471_000.png",
+      "stratum": "pleural_thickening_pa",
+      "label_list": [
+        "Pleural_Thickening"
+      ],
+      "finding_labels": "Pleural_Thickening",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000471_000.webp",
+      "sha256": "7de7a1cce3fa1bf06af7b42bee8ed45034a9371638071cc9397379d97a23f114",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000471_000.webp",
+      "thumbnail_sha256": "1bf2efff5346d878c92385c83baea14e4ad9f7cd65f05a787b7d4813aa09ddcf"
+    },
+    {
+      "sample_id": "00000886_000.png",
+      "stratum": "pleural_thickening_pa",
+      "label_list": [
+        "Pleural_Thickening"
+      ],
+      "finding_labels": "Pleural_Thickening",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000886_000.webp",
+      "sha256": "7be03ed73de4644b6bb22e0cf3258f463975f75b8393414db781d1f3e058b0bc",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000886_000.webp",
+      "thumbnail_sha256": "390fb49cc44e0e9313c7e071066d30c23664a57533f0a9d5eccd2a1d306aad57"
+    },
+    {
+      "sample_id": "00000894_001.png",
+      "stratum": "pleural_thickening_pa",
+      "label_list": [
+        "Pleural_Thickening"
+      ],
+      "finding_labels": "Pleural_Thickening",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000894_001.webp",
+      "sha256": "0e7be2cc7b6db021f77c8ed9bff718b97f39b6518fc853d4c099298e6cbb7818",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000894_001.webp",
+      "thumbnail_sha256": "80af08ea9a60d81ab06f3df2eb678654c0b57447ca3ad2279fd0e07eed4a03a0"
+    },
+    {
+      "sample_id": "00000997_004.png",
+      "stratum": "pleural_thickening_pa",
+      "label_list": [
+        "Fibrosis"
+      ],
+      "finding_labels": "Fibrosis|Pleural_Thickening",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000997_004.webp",
+      "sha256": "21f2f5a843336a46e8d746f222ea77780760b9649f550108aff8eadfb38f05bc",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000997_004.webp",
+      "thumbnail_sha256": "6dac704ab2e49fe88d78b83ec58223ec22b1663035edfd96c2175929831f2045"
+    },
+    {
+      "sample_id": "00001075_002.png",
+      "stratum": "pleural_thickening_ap",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Infiltration|Mass|Pleural_Thickening",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00001075_002.webp",
+      "sha256": "cfdd922670fd2bc4b919d15e4a9fa5615e3adcb277e6735a33a523df028939d4",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001075_002.webp",
+      "thumbnail_sha256": "da4f23e37ad2e38150dee16d1a7cb03d56eb8a2fbfac20b016aa612a38a4c904"
+    },
+    {
+      "sample_id": "00000661_000.png",
+      "stratum": "cardiomegaly_pa",
+      "label_list": [
+        "Cardiomegaly"
+      ],
+      "finding_labels": "Cardiomegaly",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000661_000.webp",
+      "sha256": "7cc84197d86848b9b50f1f5624549681794a6910af8ac65cc05ab166c8d38c78",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000661_000.webp",
+      "thumbnail_sha256": "e564d137464138927137cb26283607e0cddeb54e9738624fcc610fdf3a1fc4e7"
+    },
+    {
+      "sample_id": "00000756_001.png",
+      "stratum": "cardiomegaly_pa",
+      "label_list": [
+        "Cardiomegaly"
+      ],
+      "finding_labels": "Cardiomegaly|Effusion|Infiltration",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000756_001.webp",
+      "sha256": "9ff62ad61568a1f1fca530525ea0f837c68a7748c04e7493f984d0c4270b1274",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000756_001.webp",
+      "thumbnail_sha256": "d61279b6faadb2093d074bf2a3ba760036e59eddff8c77839e438ca5334d5082"
+    },
+    {
+      "sample_id": "00000845_000.png",
+      "stratum": "cardiomegaly_pa",
+      "label_list": [
+        "Cardiomegaly"
+      ],
+      "finding_labels": "Cardiomegaly",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000845_000.webp",
+      "sha256": "00a1102735d78bc86f81408326d386af441dc0e78f5512ba47a4370f64473926",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000845_000.webp",
+      "thumbnail_sha256": "200ffb3611473a9d00c38714f993e72288fdea0536f6e14d63a5434160e6b843"
+    },
+    {
+      "sample_id": "00000948_000.png",
+      "stratum": "cardiomegaly_pa",
+      "label_list": [
+        "Cardiomegaly"
+      ],
+      "finding_labels": "Cardiomegaly",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000948_000.webp",
+      "sha256": "c7cbf91caf66c76c7c84617ab1487a0f2ab337ed3b3810cc4ce879b1e6f3cce5",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000948_000.webp",
+      "thumbnail_sha256": "6e40efbb6911389e3fcfbd2b77a783fac985e855377f253b5d548992c00f2e6c"
+    },
+    {
+      "sample_id": "00000740_000.png",
+      "stratum": "cardiomegaly_ap",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Cardiomegaly",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00000740_000.webp",
+      "sha256": "098de6d2a981a1e1c1262ff3cd2846d4e8d5c0f17f78764d8d909dad43ca98be",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000740_000.webp",
+      "thumbnail_sha256": "e2953829d5d1d5984c32ba3d674a39b30d8df821f9d5da5a77ca6f3ac3b96382"
+    },
+    {
+      "sample_id": "00000370_000.png",
+      "stratum": "nodule_pa",
+      "label_list": [
+        "Nodule"
+      ],
+      "finding_labels": "Nodule",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000370_000.webp",
+      "sha256": "c92dcf753d256ea3dc57be1107dcf66404b32233f28fb905e5c3ab69d4e76dc8",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000370_000.webp",
+      "thumbnail_sha256": "c461e95cb72729e7c94d11101054115c0815f20742cad262aebe6392ab7423de"
+    },
+    {
+      "sample_id": "00000733_000.png",
+      "stratum": "nodule_pa",
+      "label_list": [
+        "Nodule"
+      ],
+      "finding_labels": "Nodule",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000733_000.webp",
+      "sha256": "671e58d714a9bd70975f4095b96baae106faf8aeec109b69217544273f207ac4",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000733_000.webp",
+      "thumbnail_sha256": "207da69fffc296f932a768284b10289b46da1f78722ff50f46f12e193d67306f"
+    },
+    {
+      "sample_id": "00000849_000.png",
+      "stratum": "nodule_pa",
+      "label_list": [
+        "Nodule"
+      ],
+      "finding_labels": "Nodule",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000849_000.webp",
+      "sha256": "36b05eaeb0c090ce360427195d2dcdd7022d62ffeef34915045ef170200f7929",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000849_000.webp",
+      "thumbnail_sha256": "03348ecf17e2b5a5bb928be19649b792747a2e7e9403e4c1e953a6a8e4711bf7"
+    },
+    {
+      "sample_id": "00000902_004.png",
+      "stratum": "nodule_pa",
+      "label_list": [
+        "Nodule"
+      ],
+      "finding_labels": "Nodule",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000902_004.webp",
+      "sha256": "8dc309fd74884e4461e88b24b34cf4f86473c66bb55af434490c20091f761131",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000902_004.webp",
+      "thumbnail_sha256": "99a071402e11f9c30be70de1ec3f990694fa0b4213e9715d6cd221ef77b4d674"
+    },
+    {
+      "sample_id": "00001332_000.png",
+      "stratum": "nodule_ap",
+      "label_list": [
+        "Consolidation"
+      ],
+      "finding_labels": "Consolidation|Nodule",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00001332_000.webp",
+      "sha256": "d63d81bff9a05ec1831efff4d0e764b462024f3807dbbec253c0786c721295eb",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001332_000.webp",
+      "thumbnail_sha256": "649efff179648bf11945e92f659992c41c1903d649c6894577c9a1415d2f5c09"
+    },
+    {
+      "sample_id": "00000618_001.png",
+      "stratum": "mass_pa",
+      "label_list": [
+        "Mass"
+      ],
+      "finding_labels": "Mass",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000618_001.webp",
+      "sha256": "0f3bc7dad04b84a020f53dcd7808cf2ef24f14cd1017c9ebcac0ab8e0d8a2771",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000618_001.webp",
+      "thumbnail_sha256": "39408b46799614fd9bd4214a066d2dc9a555a581978c5058d554fb123ba926c2"
+    },
+    {
+      "sample_id": "00000830_000.png",
+      "stratum": "mass_pa",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Infiltration|Mass",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000830_000.webp",
+      "sha256": "9cb786f743486dd9b8b7264f9995283f22873816bd31e8bb9baa278674c04491",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000830_000.webp",
+      "thumbnail_sha256": "745e619aa380009c35b506b00cdcf676c67af60b0716a687ab0fe69fa20d3b5e"
+    },
+    {
+      "sample_id": "00001517_001.png",
+      "stratum": "mass_pa",
+      "label_list": [
+        "Consolidation"
+      ],
+      "finding_labels": "Consolidation|Mass",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001517_001.webp",
+      "sha256": "f33ef350310a23bfa017628d1b33dac91927714c5fe6c2ecc61add7359487f17",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001517_001.webp",
+      "thumbnail_sha256": "8e79dd026303a000ea4bb1ff02139306437f3bc50e6c5ef0d50ed8cc7604943a"
+    },
+    {
+      "sample_id": "00001534_005.png",
+      "stratum": "mass_pa",
+      "label_list": [
+        "Cardiomegaly"
+      ],
+      "finding_labels": "Cardiomegaly|Mass",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001534_005.webp",
+      "sha256": "4f8f999811b2eecb5d1e4d983d36467ccc3e02a3549552d70fb3febc8df9d91d",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001534_005.webp",
+      "thumbnail_sha256": "e6bd87a6ad6f8fe0300c0d9992734077dcdc01ab260dfdd3c6ed70f549df6f45"
+    },
+    {
+      "sample_id": "00001787_008.png",
+      "stratum": "mass_ap",
+      "label_list": [
+        "Mass"
+      ],
+      "finding_labels": "Mass",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00001787_008.webp",
+      "sha256": "d2be3144a01160d6776574f93f6d2183917b4baf0cda90a9ebe17ce90ca182e3",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001787_008.webp",
+      "thumbnail_sha256": "ec586e4bea99daeb0660679dad7829a79297051b9fb2568d5f3102fe840834f9"
+    },
+    {
+      "sample_id": "00001900_028.png",
+      "stratum": "hernia_pa",
+      "label_list": [
+        "Effusion"
+      ],
+      "finding_labels": "Effusion|Hernia|Mass|Pleural_Thickening",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001900_028.webp",
+      "sha256": "064c586d9791243336d4292e6bb548cc02b151371fccb5c7ff3f793c4a290aa7",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001900_028.webp",
+      "thumbnail_sha256": "ef43cc4aa370523f951581ebc9f714afba7153d60c58c42ccc3ceb459832e905"
+    },
+    {
+      "sample_id": "00003029_005.png",
+      "stratum": "hernia_pa",
+      "label_list": [
+        "Hernia"
+      ],
+      "finding_labels": "Hernia",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00003029_005.webp",
+      "sha256": "c35036649c7c6d859bc3d63d6319bf744c11724d6983163ce576b5a72bce0493",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00003029_005.webp",
+      "thumbnail_sha256": "57d7494b334c29af23f6ba73aef25dda397584225a029d730af7206e2ad7a587"
+    },
+    {
+      "sample_id": "00003938_000.png",
+      "stratum": "hernia_pa",
+      "label_list": [
+        "Hernia"
+      ],
+      "finding_labels": "Hernia",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00003938_000.webp",
+      "sha256": "6212ce2a8835c36f35ff8fc08fcd39bb869c4f2ea87b3ff2f53c5d85ed0c3b9c",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00003938_000.webp",
+      "thumbnail_sha256": "37323b92c47f9697abc0c33644a591006c83fa6817b67d60cc384977387d79ae"
+    },
+    {
+      "sample_id": "00005736_003.png",
+      "stratum": "hernia_pa",
+      "label_list": [
+        "Hernia"
+      ],
+      "finding_labels": "Hernia",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00005736_003.webp",
+      "sha256": "0adaf514659c6ca23668fb6761b5ebe2e427dabd7fd213c38d7b3ea1c1f86807",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00005736_003.webp",
+      "thumbnail_sha256": "59230b6c770e87781b4a5074f3a6a5c3389c9029ac309c913fcdff792d602b57"
+    },
+    {
+      "sample_id": "00006713_013.png",
+      "stratum": "hernia_ap",
+      "label_list": [
+        "Hernia"
+      ],
+      "finding_labels": "Hernia",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00006713_013.webp",
+      "sha256": "3861f4e62c53371f17ba6f31b06ccf1cefe67963af8f466fdb7f30af9e7025ed",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00006713_013.webp",
+      "thumbnail_sha256": "776ac0e24115278d50071731853ff83c1efb01ea4b98fbdcf583eacd5d37e0ca"
+    },
+    {
+      "sample_id": "00000808_004.png",
+      "stratum": "no_finding_pa",
+      "label_list": [
+        "No Finding"
+      ],
+      "finding_labels": "No Finding",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00000808_004.webp",
+      "sha256": "5f4d8a9043dd5622293747fb284a91bdc3935faf481d97c92652882e5e3fe7b2",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00000808_004.webp",
+      "thumbnail_sha256": "3ed733aa604f5e45dcf7aa02dcb9ca380c8893503311e91e36e9cd1e1e44a8b7"
+    },
+    {
+      "sample_id": "00001153_006.png",
+      "stratum": "no_finding_pa",
+      "label_list": [
+        "No Finding"
+      ],
+      "finding_labels": "No Finding",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001153_006.webp",
+      "sha256": "9f8ccce3c95038cd9b01ac7c1dd4f7cb24dd6e8379f305fc919530f69a6b1a06",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001153_006.webp",
+      "thumbnail_sha256": "03e14c264a78a42ead3db62531eb250c4113e8edff52ed0fbe10f7075c08599d"
+    },
+    {
+      "sample_id": "00001247_000.png",
+      "stratum": "no_finding_pa",
+      "label_list": [
+        "No Finding"
+      ],
+      "finding_labels": "No Finding",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001247_000.webp",
+      "sha256": "39a18db916e525f8bf6f8c747f9c46f97a983b2fbc567a7d5b58ddf69df45d63",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001247_000.webp",
+      "thumbnail_sha256": "b0dec6a1a2545952eb028a4b74f196a0e5f76255a5591e68b492f492fca1ca05"
+    },
+    {
+      "sample_id": "00001320_004.png",
+      "stratum": "no_finding_pa",
+      "label_list": [
+        "No Finding"
+      ],
+      "finding_labels": "No Finding",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001320_004.webp",
+      "sha256": "4a706781192dcdbdb196059be81fa63552d4c28e5f994aac230625f081c1b955",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001320_004.webp",
+      "thumbnail_sha256": "5cabfb29201179247b49e111fb71c475523bf18546b6124b9e2781271797d852"
+    },
+    {
+      "sample_id": "00001373_005.png",
+      "stratum": "no_finding_pa",
+      "label_list": [
+        "No Finding"
+      ],
+      "finding_labels": "No Finding",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001373_005.webp",
+      "sha256": "4141f7f842028203c44f07be59ed09f13f672af3a58fed85491326a75918e002",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001373_005.webp",
+      "thumbnail_sha256": "b051ad121805f408449c1254c38743f9d695fc8664af2c2a7eb19722ab4f6aec"
+    },
+    {
+      "sample_id": "00001376_000.png",
+      "stratum": "no_finding_ap",
+      "label_list": [
+        "No Finding"
+      ],
+      "finding_labels": "No Finding",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00001376_000.webp",
+      "sha256": "a5d651378f087f7f7fe6ff69baefe22453a6fa3e28b4d52ad695cc574baae678",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001376_000.webp",
+      "thumbnail_sha256": "b15966bef755ade88f36b895d4827baf62af622540b9d10a6d3271d86af8eea5"
+    },
+    {
+      "sample_id": "00001558_009.png",
+      "stratum": "no_finding_ap",
+      "label_list": [
+        "No Finding"
+      ],
+      "finding_labels": "No Finding",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00001558_009.webp",
+      "sha256": "d0f557c5a2d679a7b1e9c5467ff92e8347e8f2977d1059291474cce4df808be1",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001558_009.webp",
+      "thumbnail_sha256": "cc222da58d3b4872cfe2bf22d8ff479d12526d7bd792d551a8735f573f915648"
+    },
+    {
+      "sample_id": "00001673_004.png",
+      "stratum": "no_finding_ap",
+      "label_list": [
+        "No Finding"
+      ],
+      "finding_labels": "No Finding",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00001673_004.webp",
+      "sha256": "488156537f9f231703b4214951fd278447e928000642e41b46a03b6fe769a224",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001673_004.webp",
+      "thumbnail_sha256": "c7a5eeac28eed5ad0faa4e924dc63a2eebc827d40a11ca59f04c503bca2a4925"
+    },
+    {
+      "sample_id": "00001736_003.png",
+      "stratum": "no_finding_ap",
+      "label_list": [
+        "No Finding"
+      ],
+      "finding_labels": "No Finding",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00001736_003.webp",
+      "sha256": "09b5da72fba9613216b86cb154734e09de1fdf5832f85ce5749507ce2d48e812",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001736_003.webp",
+      "thumbnail_sha256": "742b9a01d1cb441a1273acbaebb10369f18bc1675a63d2390bcd2e36727da4af"
+    },
+    {
+      "sample_id": "00001836_002.png",
+      "stratum": "no_finding_ap",
+      "label_list": [
+        "No Finding"
+      ],
+      "finding_labels": "No Finding",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00001836_002.webp",
+      "sha256": "4bd80a8c168311a4fa13d7beae1fa87dee6f64e55bd5fa7df666460ec4387cb2",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001836_002.webp",
+      "thumbnail_sha256": "de7c7e829a3530bbe409e64f9bfe77c7c9c988739202ea6f22fd73fabf03aef0"
+    },
+    {
+      "sample_id": "00001946_015.png",
+      "stratum": "multilabel_pa",
+      "label_list": [
+        "Infiltration"
+      ],
+      "finding_labels": "Infiltration|Pleural_Thickening|Pneumonia",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00001946_015.webp",
+      "sha256": "d02f1066bf1bf4bb59210fad974ae8e98ec57bd9831301a4188a4bf4fa3f7227",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00001946_015.webp",
+      "thumbnail_sha256": "fc85046bfa1383a20959f3e1d13e845bd28544b1d2166105b879137107f7f595"
+    },
+    {
+      "sample_id": "00002061_000.png",
+      "stratum": "multilabel_pa",
+      "label_list": [
+        "Nodule"
+      ],
+      "finding_labels": "Nodule|Pleural_Thickening|Pneumonia",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00002061_000.webp",
+      "sha256": "589eeffd506de788152fe809ff306eadb3769bcfb5ad7b08de0a68c2058f3338",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002061_000.webp",
+      "thumbnail_sha256": "78f1bcd26a0c70f1d58d2694ea84db30b7b24a1f57faef906188202a5b8d391a"
+    },
+    {
+      "sample_id": "00002106_000.png",
+      "stratum": "multilabel_pa",
+      "label_list": [
+        "Mass"
+      ],
+      "finding_labels": "Mass|Pleural_Thickening|Pneumothorax",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00002106_000.webp",
+      "sha256": "c804bdf3af2f7c018c2a1de843d9191815c45dbeafb522f1f4c5b12370ec5f95",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002106_000.webp",
+      "thumbnail_sha256": "2110d0c370225a57070025cf32076be04b39009c228479eb6605c7063502dd90"
+    },
+    {
+      "sample_id": "00002176_009.png",
+      "stratum": "multilabel_pa",
+      "label_list": [
+        "Effusion"
+      ],
+      "finding_labels": "Effusion|Pleural_Thickening|Pneumothorax",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00002176_009.webp",
+      "sha256": "5ee464692b0931fdbf031a317a94f28a1e7920dc540106e72015f38fc1b8c900",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002176_009.webp",
+      "thumbnail_sha256": "b6dc267290aced2314112eb02d925d85540789aba36d043e0b54ac14c3008f34"
+    },
+    {
+      "sample_id": "00002258_003.png",
+      "stratum": "multilabel_pa",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Infiltration|Mass",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00002258_003.webp",
+      "sha256": "c97e6f567a631cd2793b7eeba2915e5adb2d454743fd1ab58c8ee2aa8480694d",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002258_003.webp",
+      "thumbnail_sha256": "99132ee05e38a7cd7d2f0561582a5e75a7f74116f3ef9377851221d4abc7a43a"
+    },
+    {
+      "sample_id": "00002509_023.png",
+      "stratum": "multilabel_pa",
+      "label_list": [
+        "Nodule"
+      ],
+      "finding_labels": "Nodule|Pleural_Thickening|Pneumothorax",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00002509_023.webp",
+      "sha256": "197ba110252fb03250c4911b52a30d6335b3ef6c0a8b0bc7f7abab8afcb69486",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002509_023.webp",
+      "thumbnail_sha256": "3882a76f5888e4b671fc58e21aef6110b10b2e78b690f163a7698c5e5470cbe4"
+    },
+    {
+      "sample_id": "00002583_005.png",
+      "stratum": "multilabel_pa",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Consolidation|Effusion",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00002583_005.webp",
+      "sha256": "f39f3f9a0dd1cf5ed2397ecd2cfdcf1b6df550d4db11c5e43381b8aefc27ffc6",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002583_005.webp",
+      "thumbnail_sha256": "589546d2e716bafcdf8a6c9a49f948373ba25e86846ebc887c346843a168259d"
+    },
+    {
+      "sample_id": "00002704_019.png",
+      "stratum": "multilabel_pa",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Cardiomegaly|Effusion|Infiltration",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00002704_019.webp",
+      "sha256": "59d778867e8593b027a3f31f6f7553ff6857bae06e43b954b080be5757996130",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002704_019.webp",
+      "thumbnail_sha256": "6872808a631799db9fc65879c5a825bda2f5156348b54009b4103d1b746f3668"
+    },
+    {
+      "sample_id": "00002758_003.png",
+      "stratum": "multilabel_pa",
+      "label_list": [
+        "Mass"
+      ],
+      "finding_labels": "Mass|Pleural_Thickening|Pneumothorax",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00002758_003.webp",
+      "sha256": "baf670d334fc436329186d54746e85d7aab89c913392065d24b2f8cfa19d1b91",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002758_003.webp",
+      "thumbnail_sha256": "d4e10247093dec345793accce169318e8d7c39614fb748b4c7e20c42274f2eac"
+    },
+    {
+      "sample_id": "00002763_016.png",
+      "stratum": "multilabel_pa",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Cardiomegaly|Effusion|Infiltration",
+      "view_position": "PA",
+      "relative_path": "data/render/reference/00002763_016.webp",
+      "sha256": "a138c76efe58c049530788d73bc1d772bcaa1f1f1f82840c47c2e11bfe687bd6",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002763_016.webp",
+      "thumbnail_sha256": "3e524a487ca047c3f9042f18be80465a1d3da80f2f17269ed7152a1328d21886"
+    },
+    {
+      "sample_id": "00002059_003.png",
+      "stratum": "multilabel_ap",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Effusion|Infiltration|Pneumothorax",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00002059_003.webp",
+      "sha256": "239695f89da8849a8f4ac6a4849d81b66b9c41571d4f74bdcbb5610a81de8f09",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002059_003.webp",
+      "thumbnail_sha256": "a6ec4f012545f2799c9d7ad21ade30b8fa258b7b6ad04c7b35fea91d7ed8006a"
+    },
+    {
+      "sample_id": "00002300_013.png",
+      "stratum": "multilabel_ap",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Consolidation|Pneumothorax",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00002300_013.webp",
+      "sha256": "289ad37b9acadd2c594aa12f7111cb77ae74705643f1cca1397052d7389cf569",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002300_013.webp",
+      "thumbnail_sha256": "0e09c020c5a89f61ed94d63d6d40630cc21ff760c6e73818a83f050d3d5ab5d3"
+    },
+    {
+      "sample_id": "00002350_016.png",
+      "stratum": "multilabel_ap",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Emphysema|Infiltration",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00002350_016.webp",
+      "sha256": "f9ca17ef0bf115f49aaf5595e28f3ca78563b66e6e61f607432108230d6feeeb",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002350_016.webp",
+      "thumbnail_sha256": "4cc4269fbcbac38875843e7b3f940df28edec3b55988ece92e1dc5a27c9f1286"
+    },
+    {
+      "sample_id": "00002395_009.png",
+      "stratum": "multilabel_ap",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Consolidation|Effusion|Infiltration",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00002395_009.webp",
+      "sha256": "8eac9301dcf76df118297672273a40c89926f2c367aa60a451674cb8be7e1ee0",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002395_009.webp",
+      "thumbnail_sha256": "fc1cb3aefa98ef3b42802677073c2a39127cba78a7fd9a5cb3ac1b9b382db1ed"
+    },
+    {
+      "sample_id": "00002435_006.png",
+      "stratum": "multilabel_ap",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Cardiomegaly|Consolidation",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00002435_006.webp",
+      "sha256": "6950e17937aa9ea1f1e6e8a222311c3c7f16c9eeaceab63fd6d4073341f4b074",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002435_006.webp",
+      "thumbnail_sha256": "6c1c919f1060d63092620584ab4b7344c3b53b089d9dfb1e50e43e6aef745335"
+    },
+    {
+      "sample_id": "00002437_019.png",
+      "stratum": "multilabel_ap",
+      "label_list": [
+        "Infiltration"
+      ],
+      "finding_labels": "Infiltration|Mass|Nodule",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00002437_019.webp",
+      "sha256": "fa8de6138aa82af6c0c336adc322e034858dc703de057f3428e90ffad74cd509",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002437_019.webp",
+      "thumbnail_sha256": "49c48d8c318dbfbd69a377664fe00c64544cb19489c7171c2a346eb6d208db72"
+    },
+    {
+      "sample_id": "00002529_002.png",
+      "stratum": "multilabel_ap",
+      "label_list": [
+        "Edema"
+      ],
+      "finding_labels": "Edema|Effusion|Infiltration",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00002529_002.webp",
+      "sha256": "7c1557becd3d8a6f8386794571270cf757036c1dfd2978291cf52f3278a6001c",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002529_002.webp",
+      "thumbnail_sha256": "d9338996fdb11da83fb8b0fc86b6bc1ed321ab164e8f03808074bd6ee12d05e9"
+    },
+    {
+      "sample_id": "00002856_015.png",
+      "stratum": "multilabel_ap",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Consolidation|Effusion|Infiltration|Mass",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00002856_015.webp",
+      "sha256": "a86385db2a54cc4a192000761ca39e545daddd0cf5efdbc7aa12d5074c00e431",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002856_015.webp",
+      "thumbnail_sha256": "8b3b1a23574aecfcb30a1c74abf7a8575e118b27c5a5f31057e5538ca097e640"
+    },
+    {
+      "sample_id": "00002868_001.png",
+      "stratum": "multilabel_ap",
+      "label_list": [
+        "Atelectasis"
+      ],
+      "finding_labels": "Atelectasis|Infiltration|Nodule|Pneumothorax",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00002868_001.webp",
+      "sha256": "9cc771716e2e6f14acb106d5c92e0318e0ae066293aba86258f00326eeb350a6",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00002868_001.webp",
+      "thumbnail_sha256": "db98f5b82dbeea55c1f9770016c9fdce849ffdcd952b57606f6d3d301908b5b0"
+    },
+    {
+      "sample_id": "00003028_017.png",
+      "stratum": "multilabel_ap",
+      "label_list": [
+        "Edema"
+      ],
+      "finding_labels": "Edema|Effusion|Infiltration|Pleural_Thickening",
+      "view_position": "AP",
+      "relative_path": "data/render/reference/00003028_017.webp",
+      "sha256": "c6012aa21e09cc6b8aad5c141e2344dd8cd9cd66fbd01910e38beeb95cc728f2",
+      "thumbnail_relative_path": "data/render/reference/thumbs/00003028_017.webp",
+      "thumbnail_sha256": "4055629d4f5ec767c0b970da330c007458ab5aad84a61515c2c0ef98de873c68"
+    }
+  ]
+}

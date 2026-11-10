@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "kind": "external_validation",
+  "run_id": "20261110T123606_432034Z",
+  "completed_at_utc": "2026-11-10T12:36:10.259556+00:00",
+  "purpose": "External, single-finding pneumothorax evaluation on a 256 px SIIM-ACR subset; not a full 18-label validation and not clinical validation.",
+  "dataset": {
+    "manifest": "data/manifests/siim-pneumothorax-256-v1.json",
+    "manifest_sha256": "084c186bb028c3410b123b5d9de8e671815a37fc46e0fffc022e60f3bd04d51e",
+    "dataset_id": "siim-acr-pneumothorax-256px",
+    "source": {
+      "subset": "nwirandx/siim-pneumothorax-256-2400",
+      "revision": "168c763af1519837d41295eae06fd4cf35be80f8",
+      "page": "https://huggingface.co/datasets/nwirandx/siim-pneumothorax-256-2400",
+      "derived_from": "SIIM-ACR Pneumothorax Segmentation Challenge (2019)",
+      "original_terms": "https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation/rules",
+      "subset_note": "256x256 educational subset (2,400 images total). The original challenge has ~12,000 DICOM images at higher resolution; downsizing may erase small pneumothoraces (reported median lesion area 0.76% of the image).",
+      "image_format": "PNG 256x256 grayscale, embedded in Parquet",
+      "label": "has_pneumo: 1 = pneumothorax present, 0 = absent",
+      "terms_status": "Original Kaggle competition rules apply. Images remain local and are not committed to this repository; verify terms before any redistribution or commercial use."
+    },
+    "splits": {
+      "validation": {
+        "relative_path": "data/external/siim/validation.parquet",
+        "sha256": "7b45b5ab016de6b8d81f339f691fccfcd44731a23266d74930d88f14bff476b9",
+        "size_bytes": 11897555,
+        "images": 400,
+        "positive": 89,
+        "negative": 311,
+        "prevalence": 0.2225
+      },
+      "test": {
+        "relative_path": "data/external/siim/test.parquet",
+        "sha256": "2fd285a6107a837da470192ee09c443befbad69c6ac71e0dfd8ea889e563f358",
+        "size_bytes": 11834292,
+        "images": 400,
+        "positive": 85,
+        "negative": 315,
+        "prevalence": 0.2125
+      }
+    },
+    "caveat": "One finding out of 18. A positive result here does not validate the other findings, and a negative result does not invalidate the model."
+  },
+  "model": {
+    "id": "densenet121-res224-all",
+    "sha256": "56524913dd16a906422e8d8b66a7a5c46be1d82eb7ac012d8103776f1aa68899",
+    "parameter_count": 6966034,
+    "label": "Pneumothorax",
+    "label_index": 3
+  },
+  "method": {
+    "score": "sigmoid of the raw Pneumothorax logit",
+    "threshold_selection": "Youden J on the validation split",
+    "test_usage": "evaluated once after threshold selection",
+    "xrv_operating_threshold": 0.00981184747070074
+  },
+  "validation": {
+    "n": 400,
+    "positives": 89,
+    "negatives": 311,
+    "youden_j": 0.4439466743740742,
+    "threshold": 0.011668551713228226
+  },
+  "test": {
+    "n": 400,
+    "positives": 85,
+    "negatives": 315,
+    "at_selected_threshold": {
+      "threshold": 0.011668551713228226,
+      "n": 400,
+      "positives": 85,
+      "negatives": 315,
+      "tp": 70,
+      "fp": 134,
+      "tn": 181,
+      "fn": 15,
+      "sensitivity": 0.8235294117647058,
+      "specificity": 0.5746031746031746,
+      "ppv": 0.3431372549019608,
+      "npv": 0.923469387755102,
+      "accuracy": 0.6275,
+      "auroc": 0.7472268907563026,
+      "auprc": 0.39484331016416224,
+      "brier": 0.20013034935811674
+    },
+    "at_0_5": {
+      "threshold": 0.5,
+      "n": 400,
+      "positives": 85,
+      "negatives": 315,
+      "tp": 0,
+      "fp": 0,
+      "tn": 315,
+      "fn": 85,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "ppv": null,
+      "npv": 0.7875,
+      "accuracy": 0.7875,
+      "auroc": 0.7472268907563026,
+      "auprc": 0.39484331016416224,
+      "brier": 0.20013034935811674
+    },
+    "at_xrv_operating_threshold": {
+      "threshold": 0.00981184747070074,
+      "n": 400,
+      "positives": 85,
+      "negatives": 315,
+      "tp": 70,
+      "fp": 151,
+      "tn": 164,
+      "fn": 15,
+      "sensitivity": 0.8235294117647058,
+      "specificity": 0.5206349206349207,
+      "ppv": 0.3167420814479638,
+      "npv": 0.9162011173184358,
+      "accuracy": 0.585,
+      "auroc": 0.7472268907563026,
+      "auprc": 0.39484331016416224,
+      "brier": 0.20013034935811674
+    },
+    "bootstrap": {
+      "n_boot": 2000,
+      "seed": 0,
+      "ci95": {
+        "auroc": [
+          0.6972689041857877,
+          0.797240076427563
+        ],
+        "auprc": [
+          0.31132197568632924,
+          0.5020330521530589
+        ],
+        "sensitivity": [
+          0.7375,
+          0.9
+        ],
+        "specificity": [
+          0.5183956049482048,
+          0.6320762604909447
+        ]
+      }
+    }
+  },
+  "calibration": {
+    "brier_score": 0.20013034935811674,
+    "reliability_plot": "calibration.png",
+    "note": "Five equal-count bins; the scores are not claimed to be calibrated."
+  },
+  "size_analysis": [
+    {
+      "bin": "<0.5%",
+      "positives": 24,
+      "detected": 18,
+      "sensitivity": 0.75
+    },
+    {
+      "bin": "0.5\u20132%",
+      "positives": 46,
+      "detected": 41,
+      "sensitivity": 0.8913043478260869
+    },
+    {
+      "bin": "2\u20135%",
+      "positives": 10,
+      "detected": 8,
+      "sensitivity": 0.8
+    },
+    {
+      "bin": "\u22655%",
+      "positives": 5,
+      "detected": 3,
+      "sensitivity": 0.6
+    }
+  ],
+  "cam": {
+    "evaluated_positive_images": 85,
+    "pointing_hit_rate": 0.011764705882352941,
+    "mean_mask_fraction": 0.013111787683823529,
+    "random_pointing_baseline": 0.013111787683823529,
+    "mean_cam_mass_inside": 0.01708482433850431,
+    "mean_lift_over_mask_fraction": 1.3937970622035671,
+    "note": "Pointing game compares the CAM peak with the external mask. A hit rate near the mask fraction means the heatmap is not localizing."
+  },
+  "figures": {
+    "roc_test.png": {
+      "sha256": "6b19b0e7532897b86e87975f7fe2f173e3a82293fff78cbf0d24603500612837",
+      "size_bytes": 50873
+    },
+    "pr_test.png": {
+      "sha256": "d2eae7b9fd864f391d566cd57a5288d30f257e1bc00ba055e174716802d2400a",
+      "size_bytes": 53297
+    },
+    "score_distribution.png": {
+      "sha256": "8dfb0ada52f3673e5689d2e6e79ecef3b1f0c5888ac69add1569fa15927b765f",
+      "size_bytes": 40402
+    },
+    "calibration.png": {
+      "sha256": "3130f52511ce5215f42d83c34473365c8192e0d7932b8759052542aa0ef7d227",
+      "size_bytes": 59288
+    },
+    "sensitivity_by_size.png": {
+      "sha256": "83fccb40250ef2b1c219c63c1444bc99b3a1407d53738844774bddb39f40101b",
+      "size_bytes": 48022
+    },
+    "cam_examples.png": {
+      "sha256": "485025213a8e81c26a7684db58d2b643c9f5c9101d53d963e5add743796650a8",
+      "size_bytes": 1036027
+    }
+  },
+  "timing_seconds": {
+    "model_load": 0.3165401939986623,
+    "scoring_800_images": 278.56821088500146,
+    "cam_positive_images": 32.15974937400097,
+    "total": 324.46402079900145
+  },
+  "runtime": {
+    "python": "3.14.4",
+    "executable": "/home/bajagainsatish/Documents/LEARN/medical-imaging-ai-lab/.venv/bin/python",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+    "device": "cpu",
+    "torch_threads": 2,
+    "seed": 0,
+    "deterministic_algorithms": true,
+    "peak_process_rss_mib": 958.50390625,
+    "packages": {
+      "torch": "2.15.0+cpu",
+      "numpy": "2.5.4"
+    }
+  },
+  "code": {
+    "git": {
+      "commit": "f9ff5a171a243fa35dc9c60153e939a7bd5c5082",
+      "status_porcelain": "M .gitignore\n M API.md\n M README.md\n M RESEARCH_PLAN.md\n M ROADMAP.md\n M RUNBOOK.md\n M requirements-local-cpu.freeze.txt\n M src/xray_lab/service/app.py\n M src/xray_lab/service/static/app.js\n M src/xray_lab/service/static/index.html\n M src/xray_lab/service/static/styles.css\n M tests/test_service.py\n?? EXTERNAL_VALIDATION.md\n?? RADIOLOGIST_PROPOSAL.md\n?? data/manifests/siim-pneumothorax-256-v1.json\n?? docs/screenshots/ui-validation-mobile.png\n?? docs/screenshots/ui-validation.png\n?? requirements-eval.txt\n?? scripts/build_siim_validation_set.py\n?? scripts/run_external_validation.py\n?? src/xray_lab/evaluation.py\n?? tests/test_evaluation.py"
+    },
+    "file_sha256": {
+      "src/xray_lab/__init__.py": "0c48794aac99692f5ded9c9b0477fcc4cb9bb057dc6afe676829f670daa57b7d",
+      "src/xray_lab/dicom.py": "395de369462123d1e380a5a265be3552af71a07432eb72203d579ca71765faf8",
+      "src/xray_lab/evaluation.py": "c9ed064e32ae75734ef495c2be77b7baa6cc4d696dc4184dbc4edb8a84444079",
+      "src/xray_lab/inference.py": "8eda914e2a6222af0ce88e9b6051b18eba215499f36e505237f562888fc92dae",
+      "src/xray_lab/nih.py": "69383af73fcb74cf9eca2613a7e20be95c711e70c2b2d91fcaeb4bbf98b1023d",
+      "src/xray_lab/nih_source.py": "4cad326d3eca7df7e9b389c2dbed20f42f9416c2239bcd941c1f0328ac7056ff",
+      "src/xray_lab/preprocessing.py": "378c6fcdab7cb217e7776161dc706521f77483882d3d8b5a69010f082ee42699",
+      "src/xray_lab/provenance.py": "73db02a46450255f39585fa0a800ee915fa416f0e56835b5d187e54398829459",
+      "src/xray_lab/service/__init__.py": "97b97cea0cc3e4d23dd6c1e6953ef87241efa138a286bc7ad57ff8634c064112",
+      "src/xray_lab/service/app.py": "0879295e67cf94435a7dd17c9e95456bcf94189c24e31088ff8bce5fea549206",
+      "src/xray_lab/service/explain.py": "30e842153304242024929b50b0e0c81226e9a0518299686deac4a6976fd96c32",
+      "src/xray_lab/service/runtime.py": "2a199cab155ea80b8c2bb3e018f75d1e7390f850acedbc6f90458263d528a9d2",
+      "src/xray_lab/service/schemas.py": "784e3b2676abbca38a9ca4ce23151672010335fd8ff1e1c4f461413c258570ee",
+      "src/xray_lab/visualization.py": "93ca82911359462558f6c91f0c526f98fdb1b4150cf4bb00bb3990c1918062b0",
+      "scripts/build_demo_gallery.py": "cbc2f20560a8227c327256ee002f98aadb0623636d1caf744a5711496d90da9a",
+      "scripts/build_dicom_samples.py": "19bd65c21f4892451e8972d7acef5463b23fb7422181c123f492fd0cbbfad4fa",
+      "scripts/build_pilot_set.py": "46205ef8a7d190fc6297a07c0ef65deef9b9b0108a6065f64244b6e4a3109ad5",
+      "scripts/build_reference_library.py": "6bdde2acc1cf7407abda8a5e85d07d7bfe23769c78fce605c95d2e740ff66df5",
+      "scripts/build_report.py": "ca945b80178a8bd24084871aafe94ee65b14a8277ddb005b58947b313b828d6f",
+      "scripts/build_siim_validation_set.py": "1d1718b87df09cbe77703aade1c1ac2a6454c3333c2952270b9f92e153598dd3",
+      "scripts/check_cpu_runtime.py": "99b3ed68d710aba795432b2a2a69dd29767fddc589b560696efa99f3c5f3b457",
+      "scripts/check_xrv_runtime.py": "0105b2c1e0d9f24c3459a741df21bdb571d63304c54b7c50ac0b4d1eb56dbcde",
+      "scripts/download_sample.py": "1c94a7a8b6d6c0859804a1713e8fa6bc58fb6598ae358599de4b872b52eeb589",
+      "scripts/run_external_validation.py": "141e2731b7d67577e2b28bbeade54c604218f3ff70d794773edff54b76b02b5b",
+      "scripts/run_first_inference.py": "a4351ad30893ee5acd560475a494c29ece6a4c6b4c85e84407fed8746516d85c",
+      "scripts/run_model_comparison.py": "ea1eebd513e37899bc22ce39268d2a882fe203999a7f9666d613f0f332aa0d8b",
+      "scripts/run_pilot_inference.py": "f4ee6f9a2098fb8d772810a456792180467f9ecb359e7a9c8e95c47157a99f39",
+      "scripts/run_pilot_visualization.py": "3b2ca1df72d5e75a9e725b2ee7a4bcb5c1fdde72eabff5d7d4557224b95d8b74",
+      "scripts/serve_api.py": "cf6020a4674f1f4909478cb5facfade632aca3668b522560fbd9e49bbd7e2389",
+      "scripts/serve_report.py": "79356b4a6346edb63d44fee04faa9aaa8d2dd912f06208ad22ca488e45890cbb",
+      "requirements-api.txt": "a11bfd1732673e1a5c901e3374ba418257965717185c8fdc5a288fdbaea779f2",
+      "requirements-cpu.txt": "8a0df6ee804a79f5330e269424a78b63cf7792cb1bbefcda567696c26b7293a7",
+      "requirements-eval.txt": "d414838d7810fcd24473e2220d64e5fe693ec97715d6e503c6b59737c7ebc54d",
+      "requirements-local-cpu.freeze.txt": "cfc70603b1d9d38f4a18874ad7740d23a4739d7335bf4bc2bcf7d7c7abb498e3",
+      "requirements-viz.txt": "de950d3b75e4ad1a760c121533e06390c84574f7dd0b53c0eaa742ab6d5c2f38",
+      "requirements-xrv.txt": "92dcee4c1b8806e18144cab4904f188f979fc95de964b418ed9b59302a353b9b"
+    }
+  }
+}
